@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "800455568342",
+    "project_id": "first-app-c9386",
+    "storage_bucket": "first-app-c9386.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800455568342:android:85f3bce43a27f779a01277",
+        "android_client_info": {
+          "package_name": "com.hectoxor.firstapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnrv6H7j3X6DW4cF3ac3G9TSoyLiwgG_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
