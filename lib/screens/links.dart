@@ -31,6 +31,10 @@ class LinksScreen extends StatelessWidget {
       "title": "App | Technical Support",
       "url": "https://t.me/enteneract",
     },
+    {
+      "title": "Update App",
+      "url": "https://boltm3-4240d0ff1ae7.herokuapp.com/androidapp",
+    },
   ];
 @override
   Widget build(BuildContext context) {

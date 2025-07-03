@@ -45,10 +45,10 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: const FirebaseOptions(
-      apiKey: "AIzaSyBnrv6H7j3X6DW4cF3ac3G9TSoyLiwgG_U",
-      appId: "1:800455568342:android:85f3bce43a27f779a01277",
-      messagingSenderId: "800455568342",
-      projectId: "first-app-c9386",
+      apiKey: "your api key",
+      appId: "app id",
+      messagingSenderId: "sender id",
+      projectId: "project id",
     ),
   );
   try {
@@ -190,7 +190,7 @@ class _MainLayoutState extends State<MainLayout> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Central Asia FTC 2024',
+                      'FIRST Central Asia',
                       style: TextStyle(
                         color: Color.fromARGB(255, 255, 119, 0),
                         fontSize: 24,
@@ -312,7 +312,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
   bool _isSubmitDisabled = false;  // New variable to control button state
   Timer? _timer;  // Timer to handle cooldown
   int _remainingTime = 0; 
-  final _openAIService = OpenAIService('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');
+  final _openAIService = OpenAIService('create ur API key in env');
 
   @override
   void initState() {

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:photo_view/photo_view.dart';
 
 class MapsScreen extends StatelessWidget {
-  final String mapImageUrl = 'https://lh3.googleusercontent.com/drive-viewer/AEYmBYTmjraooVSRKRxYxa-nII14-4NMkqUTyDCeFkhCIJKBckALU9z0wFLKulul7tInIzHZwLnDZ4fGHcH76kNsjSgF3kZGqA=s1600';
+  final String mapImageUrl = 'lib/img/map.png';
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class MapsScreen extends StatelessWidget {
               child: Stack(
                 alignment: Alignment.center,
                 children: [
-                  Image.network(
+                  Image.asset(
                     mapImageUrl,
                     height: 300,
                     fit: BoxFit.cover,
@@ -79,7 +79,7 @@ class MapsScreen extends StatelessWidget {
 
 
 class FtcMapScreen extends StatelessWidget {
-  final String ftcMapImageUrl = 'https://external-preview.redd.it/2023-frc-world-championship-pit-map-v0-qt5X9uZLAnz5VTpm-Ce3D3v4g3n-J48IOtqWaxwY85A.png?auto=webp&s=b18468ace5a06df798603bff7c7e4806a765232a';
+  final String ftcMapImageUrl = 'lib/img/map.png';
 
   @override
   Widget build(BuildContext context) {
@@ -91,7 +91,7 @@ class FtcMapScreen extends StatelessWidget {
           child: Stack(
             alignment: Alignment.center,
             children: [
-              Image.network(
+              Image.asset(
                 ftcMapImageUrl,
                 height: 300,
                 fit: BoxFit.cover,
@@ -123,7 +123,7 @@ class FtcMapScreen extends StatelessWidget {
 
 
 class FllMapScreen extends StatelessWidget {
-  final String fllMapImageUrl = 'https://firstintexas.org/wp-content/uploads/2022/09/2023-San-Antonio-Pit-Map.png';
+  final String fllMapImageUrl = 'lib/img/map.png';
 
   @override
   Widget build(BuildContext context) {
@@ -135,7 +135,7 @@ class FllMapScreen extends StatelessWidget {
           child: Stack(
             alignment: Alignment.center,
             children: [
-              Image.network(
+              Image.asset(
                 fllMapImageUrl,
                 height: 300,
                 fit: BoxFit.cover,
@@ -177,7 +177,7 @@ class PhotoViewScreen extends StatelessWidget {
       appBar: AppBar(title: Text('Map Zoom')),
       body: Container(
         child: PhotoView(
-          imageProvider: NetworkImage(imageUrl),
+          imageProvider: AssetImage(imageUrl),
         ),
       ),
     );
